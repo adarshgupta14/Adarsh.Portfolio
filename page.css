@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background: rgb(115, 177, 172);
+    background: url(bg.jpg);
+    background-size: cover;
 }
 .header {
     position: fixed;
@@ -15,29 +16,40 @@
 .logo {
     padding-top: 8px;
     padding-left: 40px;
-    color: rgb(42, 8, 134);
+    color: khaki;
     font-size: 1.75rem;
     cursor: default;
 }
 .maintainance{ 
-    margin-top: 230px;
-    margin-left: 230px;
-    margin-bottom: 282px;
+    margin-top: 250px;
+    margin-left: 500px;
     display: inline-flex;
     padding: 12px 28px;
-    background: #0ef;
-    border: 2px solid #000;
+    background: darkgreen;
+    border: 1px solid darkgreen;
     border-radius: 15px;
-    font-size: 60px;
-    color: #081b29;
+    font-size: 25px;
+    color: lightgreen;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    box-shadow: 0px 0px 1px 2px lightgreen;
 }
 
 footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     background-color: #0e0e1a;
     text-align: center;
     color: gray;
     padding: 12px 0;
+}
+
+@media screen and (max-width: 500px){
+    .maintainance{
+        margin-top: 350px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
