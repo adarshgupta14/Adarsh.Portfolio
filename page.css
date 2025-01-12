@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background: url(bg.jpg);
-    background-size: cover;
+    background-color: rgb(4, 21, 43);
 }
 .header {
     position: fixed;
@@ -14,26 +13,30 @@
     z-index: 100;
 }
 .logo {
-    padding-top: 8px;
-    padding-left: 40px;
-    color: khaki;
-    font-size: 1.75rem;
+    padding-top: 20px;
+    padding-left: 150px;
+    font-family: 'Poppins', sans-serif;
+    color: wheat;
+    font-size: 1.5rem;
     cursor: default;
 }
+.box{
+    display: flex;
+    justify-content: center;
+}
 .maintainance{ 
-    margin-top: 250px;
-    margin-left: 500px;
+    margin-top: 42vh;
     display: inline-flex;
     padding: 12px 28px;
-    background: darkgreen;
-    border: 1px solid darkgreen;
+    background: rgb(68, 151, 202);
+    border: 1px solid rgb(68, 151, 202);
     border-radius: 15px;
     font-size: 25px;
-    color: lightgreen;
+    color: rgb(12, 49, 96);
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0px 0px 1px 2px lightgreen;
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
 }
 
 footer{

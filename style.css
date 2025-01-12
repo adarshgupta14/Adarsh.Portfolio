@@ -106,6 +106,7 @@ nav ul a:hover {
 }
 
 .home-right img {
+    margin-left: 15px;
     padding: 5px;
     width: 70%;
     border-radius: 50%;
