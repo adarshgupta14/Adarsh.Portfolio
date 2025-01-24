@@ -27,6 +27,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
     height: 62px;
     background-color: rgb(4, 21, 43);
 }
@@ -65,14 +66,22 @@ nav ul a:hover {
 
 /* Home */
 
-.Home-content {
+.backboxhome{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 150px 0;
+    border: 10px #0ef;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+    margin: 10vh;
+    padding: 6vh;
 }
 
-.Home-content>div {
+.Home-content {
+    margin: 100px 0;
+}
+
+.backboxhome>div {
     width: 30%;
 }
 
@@ -156,6 +165,19 @@ nav ul a:hover {
 
 /* About */
 
+
+.backboxabout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+    margin: 10vh;
+    padding: 6vh;
+}
+
 .About-img {
     padding: 2px;
     width: 45%;
@@ -167,12 +189,7 @@ nav ul a:hover {
 }
 
 .About {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 1.5rem;
-    margin: 150px 0;
+    margin: 100px 0;
 }
 
 .About-text {
@@ -220,7 +237,7 @@ nav ul a:hover {
     margin-bottom: 4rem;
 }
 
-.sub-title {
+.services_head {
     text-align: center;
     font-size: 50px;
     padding-bottom: 40px;
@@ -248,8 +265,7 @@ nav ul a:hover {
     font-size: 13px;
     border-right: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 20px #012290f7,
-                1px 1px 40px #0053b8f7
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
 }
 
 .services-list div i{
@@ -297,21 +313,33 @@ nav ul a:hover {
 
 /* Skills */
 
-#Skills{
+
+.backboxskills{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    gap: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+    margin: 4vh 10vh;
+    padding: 6vh;
 }
+
+.skill_head {
+    text-align: center;
+    font-size: 50px;
+}
+
 .container1{
     width: 350px;
-    height: 500px;
+    height: 430px;
 }
 .heading1{
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .bar{
     font-size: 23px;
@@ -473,12 +501,23 @@ nav ul a:hover {
     opacity: 0;
 }
 
+
+
+
 /* Projects */
+
+
+.backboxprojects{
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+    margin: 4vh 10vh;
+    padding: 6vh;
+}
+
 .main-text{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .main-text h2{
-    padding-bottom: 50px;
     font-size: 50px;
     line-height: 1;
     text-align: center;
@@ -489,6 +528,7 @@ nav ul a:hover {
 .project-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    /* padding: 10vh; */
 }
 .row{
     margin-left: 2px;
@@ -552,13 +592,20 @@ nav ul a:hover {
 
 
 /* ContactMe */
-.contact{
+
+
+.backboxcontact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
     gap: 3rem;
     margin-top: 130px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+    margin: 10vh;
+    padding: 6vh;
 }
+
 .contact-text{
     margin-left: 100px;
     margin-right: 100px;
