@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh-Developer Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -24,6 +27,13 @@
                     <li><a href="#Skills" style="--i:3">Skills</a></li>
                     <li><a href="#Projects" style="--i:4">Projects</a></li>
                     <li><a href="#Contact" style="--i:5">Contact</a></li>
+                    <li class="theme-switch"> <!--  Toggle Switch -->
+                        <input type="checkbox" id="switch" />
+                        <label class="toggle-icons" for="switch">
+                            <img src="moon.svg" class="moon" />
+                            <img src="sun.svg" class="sun" />
+                        </label>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -35,24 +45,30 @@
         <section class="Home-content" id="Home">
             <div class="backboxhome">
                 <div class="home-left">
-                <div class="slidebottom">Hey, It's me </div>
-                <span class="name">Adarsh</span>
-                <div class="slidebottom">and I am a passionate</div>
-                <span class="slidebottom" id="element"></span>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/profile.php?id=100024140407916&mibextid=ZbWKwL" target="_blank"
-                        style="--i:6"><i class='bx bxl-facebook'></i></box-icon></a>
-                    <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:7"><i
-                            class='bx bxl-instagram' target="_blank"></i></a>
-                    <a href="#" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="https://www.linkedin.com/in/adarshgupta04"
-                        target="_blank" style="--i:9"><i class='bx bxl-linkedin'></i></a>
-                </div>
-                <a href="https://drive.google.com/file/d/1PJOBDvou8KCCVnV-Ff7sab2CSQxSZxjj/view?usp=sharing"
-                    target="_blank" class="button-box">Resume</a>
+                    <div class="slidebottom">Hey, It's me </div>
+                    <span class="name">Adarsh</span>
+                    <div class="slidebottom">and I am a passionate</div>
+                    <span class="slidebottom" id="element"></span>
+                    <div class="social-media">
+                        <a href="https://github.com/adarshgupta14" target="_blank" style="--i:6"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+                                    clip-rule="evenodd"></path>
+                            </svg></i></box-icon></a>
+                        <a href="https://www.linkedin.com/in/adarshgupta04" target="_blank" style="--i:7"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:8"><i
+                                class='bx bxl-instagram' target="_blank"></i></a>
+                        <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
+
+                    </div>
+                    <a href="https://drive.google.com/file/d/1PJOBDvou8KCCVnV-Ff7sab2CSQxSZxjj/view?usp=sharing"
+                        target="_blank" class="button-box">Resume</a>
                 </div>
                 <div class="home-right">
-                <img src="img.jpg" alt="">
+                    <img src="img.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -62,10 +78,13 @@
             <div class="backboxabout">
                 <img src="img.jpg" class="About-img" alt="">
                 <div class="About-text">
-                <h2>About<span>Me</span></h2>
-                <h4>Frontend Designer</h4>
-                <p>Hey I'm Adarsh, currently in pre-final year of B.Tech in Computer Science Engineering. I am a keen in Frontend Designing, DSA and have a good commmand over Java, Python and C programming. Seeking opportunities to leverage skills and knowledge to contribute effectively to innovate projects and solutions in the field of computer science.
-                </p>
+                    <h2>About<span>Me</span></h2>
+                    <h4>Frontend Designer</h4>
+                    <p>Hey I'm Adarsh, currently in pre-final year of B.Tech in Computer Science Engineering. I am a
+                        keen in Frontend Designing, DSA and have a good commmand over Java, Python and C programming.
+                        Seeking opportunities to leverage skills and knowledge to contribute effectively to innovate
+                        projects and solutions in the field of computer science.
+                    </p>
                 </div>
             </div>
         </section>
@@ -74,20 +93,22 @@
         <section class="services" id="services">
             <div class="container">
                 <h1 class="sub-title services_head">My<span>Services</span></h1>
-                <div class="services-list">                  
+                <div class="services-list">
                     <div>
                         <i class='bx bxl-apple' style='color:#00eeff'></i>
                         <h2>Web Development</h2>
-                        <p>We develop code for simple or complex websites as per your requirement. If you want to develop code for your website, contact us.</p>
+                        <p>We develop code for simple or complex websites as per your requirement. If you want to
+                            develop code for your website, contact us.</p>
                         <a href="page.html" target="_blank" class="read">Learn More</a>
                     </div>
                     <div>
                         <i class='bx bx-crop' style='color:#00eeff'></i>
                         <h2>Web Design</h2>
-                        <p>We design dummy, fully functional and working websites as per your requirement. If you want to design your website contact us.</p>
+                        <p>We design dummy, fully functional and working websites as per your requirement. If you want
+                            to design your website contact us.</p>
                         <a href="page.html" target="_blank" class="read">Learn More</a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -97,33 +118,33 @@
             <h1 class="sub-title skill_head">My<span>Skills</span></h1>
             <div class="backboxskills">
                 <div class="container1">
-                <h1 class="heading1">Technical Skills</h1>
-                <div class="Technical-bars">
-                    <div class="bar"><i class='bx bxl-html5' style='color: #c95d2e'></i>
-                        <div class="info">
-                            <span>HTML</span>
+                    <h1 class="heading1">Technical Skills</h1>
+                    <div class="Technical-bars">
+                        <div class="bar"><i class='bx bxl-html5' style='color: #c95d2e'></i>
+                            <div class="info">
+                                <span>HTML</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="progress-line html">
-                            <span></span>
+                        <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
+                            <div class="info">
+                                <span>CSS</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
-                        <div class="info">
-                            <span>CSS</span>
+                        <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+                            <div class="info">
+                                <span>Javascript</span>
+                            </div>
+                            <div class="progress-line js">
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="progress-line css">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
-                        <div class="info">
-                            <span>Javascript</span>
-                        </div>
-                        <div class="progress-line js">
-                            <span></span>
-                        </div>
-                    </div>
-                    <!-- <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
+                        <!-- <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
                         <div class="info">
                             <span>React</span>
                         </div>
@@ -131,45 +152,45 @@
                             <span></span>
                         </div>
                     </div> -->
-                </div>
+                    </div>
                 </div>
 
                 <div class="container1">
-                <h1 class="heading1">Proffessional Skills</h1>
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">85%</div>
-                        <div class="text">Creativity</div>
+                    <h1 class="heading1">Proffessional Skills</h1>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">85%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Communication</div>
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">75%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">95%</div>
+                            <div class="text">Teamwork</div>
+                        </div>
                     </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">Communication</div>
-                    </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">75%</div>
-                        <div class="text">Problem Solving</div>
-                    </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">95%</div>
-                        <div class="text">Teamwork</div>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -181,20 +202,44 @@
                 <div class="backboxprojects">
                     <div class="project-content">
                         <div class="row">
-                        <img src="adarsh.portfolio.png" alt="">
-                        <div class="layer">
-                            <h5>Personal Portfolio</h5>
-                            <p>It is my personal portfolio. I have provided information regading my skill set, projects and many more in this portfolio. You can also contact me through this.</p>
-                            <a href=""><i class='bx bx-link-external' style="color: #000;"></i></a>
-                        </div>
+                            <img src="adarsh.portfolio.png" alt="">
+                            <div class="layer">
+                                <h5>Personal Portfolio</h5>
+                                <p>It is my personal portfolio. I have provided information regading my skill set,
+                                    projects and many more in this portfolio. You can also contact me through this.</p>
+                                <a href=""><i class='bx bx-link-external' style="color: #000;"></i></a>
+                            </div>
                         </div>
                         <div class="row">
-                        <img src="tech.tutor.png" alt="">
-                        <div class="layer">
-                            <h5>Tech Tutor</h5>
-                            <p>It is a course selling website. In this, I have provided some of the best courses for tech as well as non-tech peoples regarding coding languages where they can learn it from beginning.</p>
-                            <a href="https://adarshgupta14.github.io/TechTutor/" target="_blank"><i class='bx bx-link-external' style="color: #000;"></i></a>
+                            <img src="tech.tutor.png" alt="">
+                            <div class="layer">
+                                <h5>Tech Tutor</h5>
+                                <p>It is a course selling website. In this, I have provided some of the best courses for
+                                    tech as well as non-tech peoples regarding coding languages where they can learn it
+                                    from beginning.</p>
+                                <a href="https://adarshgupta14.github.io/TechTutor/" target="_blank"><i
+                                        class='bx bx-link-external' style="color: #000;"></i></a>
+                            </div>
                         </div>
+                        <div class="row">
+                            <img src="tech.tutor.png" alt="">
+                            <div class="layer">
+                                <h5>Weather App</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias, nobis repellendus provident exercitationem a sit eaque officiis qui optio.</p>
+                                <a href="https://adarshgupta14.github.io/WeatherApp/" target="_blank"><i
+                                        class='bx bx-link-external' style="color: #000;"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="tech.tutor.png" alt="">
+                            <div class="layer">
+                                <h5>Tech Tutor</h5>
+                                <p>It is a course selling website. In this, I have provided some of the best courses for
+                                    tech as well as non-tech peoples regarding coding languages where they can learn it
+                                    from beginning.</p>
+                                <a href="https://adarshgupta14.github.io/TechTutor/" target="_blank"><i
+                                        class='bx bx-link-external' style="color: #000;"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,32 +250,41 @@
         <section class="contact" id="Contact">
             <div class="backboxcontact">
                 <div class="contact-text">
-                <h2>Contact<span>Me</span></h2>
-                <h4>Let's work together</h4>
-                <p>Thanks you for visiting our website, if you have any query or suggestions you can send your message or want to discuss about any project or any services then you can contact me through email.</p>
-                <div class="contact-list">
-                    <li><i class='bx bx-send' style='color:#00eeff'></i> adarshfresher@gmail.com</li>
-                    <li><i class='bx bxs-phone' style='color:#00eeff'></i> ----------</li>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/profile.php?id=100024140407916&mibextid=ZbWKwL" target="_blank"
-                        style="--i:6"><i class='bx bxl-facebook'></i></box-icon></a>
-                    <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:7"><i
-                            class='bx bxl-instagram' target="_blank"></i></a>
-                    <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.linkedin.com/in/adarshgupta04"
-                        target="_blank" style="--i:9"><i class='bx bxl-linkedin'></i></a>
-                </div>
+                    <h2>Contact<span>Me</span></h2>
+                    <h4>Let's work together</h4>
+                    <p>Thanks you for visiting our website, if you have any query or suggestions you can send your
+                        message or want to discuss about any project or any services then you can contact me through
+                        email.</p>
+                    <div class="contact-list">
+                        <li><i class='bx bx-send' style='color:#00eeff'></i> adarshfresher@gmail.com</li>
+                        <li><i class='bx bxs-phone' style='color:#00eeff'></i> ----------</li>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://github.com/adarshgupta14" target="_blank" style="--i:6"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+                                    clip-rule="evenodd"></path>
+                            </svg></i></box-icon></a>
+                        <a href="https://www.linkedin.com/in/adarshgupta04" target="_blank" style="--i:7"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:8"><i
+                                class='bx bxl-instagram' target="_blank"></i></a>
+                        <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
+                        
+                    </div>
                 </div>
 
                 <div class="contact-form">
-                <form action="">
-                    <input type="" placeholder="Enter Your Name" required>
-                    <input type="" placeholder="Enter Your Email" required>
-                    <input type="" placeholder="Enter Your Subject" required>
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                    <input type="submit" value="Submit" class="send">
-                </form>
+                    <form action="">
+                        <input type="" placeholder="Enter Your Name" required>
+                        <input type="" placeholder="Enter Your Email" required>
+                        <input type="" placeholder="Enter Your Subject" required>
+                        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"
+                            required></textarea>
+                        <input type="submit" value="Submit" class="send">
+                    </form>
                 </div>
             </div>
         </section>
