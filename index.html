@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh-Developer Portfolio</title>
 
-    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,12 @@
         <nav>
             <div class="logo">Adarsh's Portfolio</div>
             <div class="nav-content">
-                <ul>
-                    <li><a href="#Home" style="--i:1" class="active">Home</a></li>
-                    <li><a href="#About" style="--i:2">About</a></li>
-                    <li><a href="#Skills" style="--i:3">Skills</a></li>
-                    <li><a href="#Projects" style="--i:4">Projects</a></li>
-                    <li><a href="#Contact" style="--i:5">Contact</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#Home" class="nav-link" style="--i:1" class="active">Home</a></li>
+                    <li><a href="#About" class="nav-link" style="--i:2">About</a></li>
+                    <li><a href="#Skills" class="nav-link" style="--i:3">Skills</a></li>
+                    <li><a href="#Projects" class="nav-link" style="--i:4">Projects</a></li>
+                    <li><a href="#Contact" class="nav-link" style="--i:5">Contact</a></li>
                     <li class="theme-switch"> <!--  Toggle Switch -->
                         <input type="checkbox" id="switch" />
                         <label class="toggle-icons" for="switch">
@@ -35,6 +35,12 @@
                         </label>
                     </li>
                 </ul>
+                <!-- HamburgerMenu  -->
+                <div class="hamburger">
+                    <span class="h-bar"></span>
+                    <span class="h-bar"></span>
+                    <span class="h-bar"></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -211,7 +217,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <img src="tech.tutor1.png" alt="">
+                            <img src="tech.tutor.png" alt="">
                             <div class="layer">
                                 <h5>Tech Tutor</h5>
                                 <p>It is a course selling website. In this, I have provided some of the best courses for

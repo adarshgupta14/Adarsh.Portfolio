@@ -1,6 +1,7 @@
 
 :root {
   --background: linear-gradient(to right, #74ebd5, #acb6e5); /* Light theme gradient */
+  --hb-background: #5264b4;
   --text-color: rgb(0, 0, 0);
   --ab-text: rgb(0, 0, 0);
   --nav-bg: linear-gradient(to right, #50dac0, #8997d3);
@@ -10,10 +11,12 @@
   --btn-color: #74ebd5;
   --op-sun: 0;
   --op-moon: 1;
+  --shadow: 0 2px 10px #acb6e5;
 }
 
 [data-theme="dark"] {
     --background: linear-gradient(to right, #03001e, #7303c0, #ec38bc);
+    --hb-background: #03001e;
     --text-color: wheat;
     --ab-text: aliceblue;
     --nav-bg: linear-gradient(to right, #03001e, #7303c0, #ec38bc);
@@ -23,6 +26,7 @@
     --btn-color: #7303c0;
     --op-sun: 1;
     --op-moon: 0;
+    --shadow: 0 2px 10px #ec38bc;
 }
 html{
     scroll-behavior: smooth;
@@ -45,7 +49,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: transparent;
     z-index: 100;
 }
@@ -73,6 +77,7 @@ nav ul a {
     display: inline-block;
     text-decoration: none;
     color: var(--link-color);
+    opacity: 0;
     animation: slidetop .5s ease forwards;
     animation-delay: calc(.2s*var(--i));
 }
@@ -112,6 +117,8 @@ nav ul a:hover:after {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  animation: slideleft .5s ease forwards;
+  animation-delay: calc(.2s*var(--i));
 }
 
 .toggle-icons > img {
@@ -136,6 +143,22 @@ nav ul a:hover:after {
 
 #switch:checked + .toggle-icons .sun {
   transform: rotate(100deg);
+}
+
+   /* HamburgerMenu */
+.hamburger {
+  margin-bottom: 0.1rem;
+  display: none;
+}
+
+.h-bar {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  background-color: wheat;
 }
 
 
@@ -408,14 +431,13 @@ nav ul a:hover:after {
 
 .container1{
     width: 350px;
-    height: 430px;
 }
 .heading1{
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 30px;
+    margin: 10px;
 }
 .bar{
     font-size: 23px;
@@ -600,7 +622,6 @@ nav ul a:hover:after {
 .project-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, auto));
-    /* padding: 10vh; */
 }
 .row{
     margin: 2px;
@@ -811,12 +832,46 @@ footer div {
 
     /* Navbar */ 
     nav {
-        flex-direction: column;
         height: 75px;
     }
-    
+    .nav-content{
+        padding: 0;
+    }
+    nav ul {
+        padding: 0;
+    }
     nav ul li{
-        margin: 0 12px;
+        margin: 0 5px;
+    }
+    nav .nav-menu {
+        position: fixed;
+        right: -100vw;
+        top: 4.5rem;
+        flex-direction: column;
+        width: calc(40% - 10px);
+        box-shadow: var(--shadow);
+        align-items: flex-start;
+        transition: 0.3s;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    .nav-menu.active {
+        background: var(--hb-background);
+        right: 20px;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 0.2rem 0.4rem;
+    }
+    .hamburger.active .h-bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+   .hamburger.active .h-bar:nth-child(2) {
+        opacity: 0;
+    }
+   .hamburger.active .h-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
     
     /* Home */
@@ -844,6 +899,10 @@ footer div {
         margin-bottom: 73px;
     }
 
+    .social-media a{
+        margin: 30px 7.5px;
+    }
+
     /* About */
     .backboxabout{
         margin: 1vh;
@@ -869,17 +928,18 @@ footer div {
     /* Skills */
     .backboxskills{
         flex-direction: column;
+        align-items: center;
         margin: 1vh;
         padding: 1vh;
-    }
-    .container1{
-        padding-left: 20px;
     }
 
     /* Project */
     .backboxprojects{
         margin: 1vh;
         padding: 1vh;
+    }
+    .project-content{
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto))
     }
     .row{
         margin-bottom: 4px;
