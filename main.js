@@ -1,9 +1,11 @@
 //Starting  animation of #element
-var typed = new Typed('#element', {
-    strings: ['Engineering Student', 'Programmer', 'Web Developer', 'Web Designer.'],
-    typeSpeed: 50,
-});
-
+var typedElement = document.getElementById('element');
+if (typedElement) {
+    var typed = new Typed('#element', {
+        strings: ['Engineering Student', 'Programmer', 'Web Developer', 'Web Designer.'],
+        typeSpeed: 50,
+    });
+}
 //Hamburger Setup
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -44,3 +46,35 @@ if (currentTheme) {
   // Optional: default to light
   document.documentElement.setAttribute("data-theme", "light");
 }
+
+const navbar = document.getElementById("navbar");
+const navContent = document.getElementsByClassName("nav-content");
+const navTags = document.querySelectorAll(".nav-tags");
+
+let previousScrollPosition = window.pageYOffset;
+
+window.onscroll = function () {
+  let currentScrollPosition = window.pageYOffset;
+  if (window.innerWidth > 500) {
+    if(previousScrollPosition < currentScrollPosition){
+      navbar.style.justifyContent = 'space-between';
+      navbar.style.margin = '0 30vh';
+      navbar.style.marginTop = '10px';
+      navbar.style.padding = '0 20px';
+      navbar.style.borderRadius = '10px';
+      navTags.forEach(navTags => {
+        navTags.style.margin = '0 10px';
+      })
+    }else{
+      navbar.style.justifyContent = 'space-around';
+      navbar.style.margin = '0';
+      navbar.style.marginTop = '0';
+      navbar.style.padding = '0';
+      navbar.style.borderRadius = '0';
+      navTags.forEach(navTags => {
+       navTags.style.margin = '0 23px';
+      })
+    }
+    previousScrollPosition = currentScrollPosition;
+  }
+};

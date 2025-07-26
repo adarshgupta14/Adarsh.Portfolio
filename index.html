@@ -18,15 +18,15 @@
 <body>
     <!-- Finalized -->
     <header class="header">
-        <nav>
+        <nav id="navbar">
             <div class="logo">Adarsh's Portfolio</div>
             <div class="nav-content">
                 <ul class="nav-menu">
-                    <li><a href="#Home" class="nav-link" style="--i:1" class="active">Home</a></li>
-                    <li><a href="#About" class="nav-link" style="--i:2">About</a></li>
-                    <li><a href="#Skills" class="nav-link" style="--i:3">Skills</a></li>
-                    <li><a href="#Projects" class="nav-link" style="--i:4">Projects</a></li>
-                    <li><a href="#Contact" class="nav-link" style="--i:5">Contact</a></li>
+                    <li class="nav-tags"><a href="#Home" class="nav-link" style="--i:1" class="active">Home</a></li>
+                    <li class="nav-tags"><a href="#About" class="nav-link" style="--i:2">About</a></li>
+                    <li class="nav-tags"><a href="#Skills" class="nav-link" style="--i:3">Skills</a></li>
+                    <li class="nav-tags"><a href="#Projects" class="nav-link" style="--i:4">Projects</a></li>
+                    <li class="nav-tags"><a href="#Contact" class="nav-link" style="--i:5">Contact</a></li>
                     <li class="theme-switch"> <!--  Toggle Switch -->
                         <input type="checkbox" id="switch" />
                         <label class="toggle-icons" for="switch">
@@ -82,7 +82,9 @@
         <!-- Finalized -->
         <section class="About" id="About">
             <div class="backboxabout">
-                <img src="img.jpg" class="About-img" alt="">
+                <div class="box">
+                    <img src="img.jpg" class="About-img" alt="">
+                </div>
                 <div class="About-text">
                     <h2>About<span>Me</span></h2>
                     <h4>Frontend Designer</h4>
@@ -150,14 +152,14 @@
                                 <span></span>
                             </div>
                         </div>
-                        <!-- <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
-                        <div class="info">
-                            <span>React</span>
+                        <div class="bar"><i class='bx bxl-react' style='color:#69bcbc'></i>
+                            <div class="info">
+                                <span>React</span>
+                            </div>
+                            <div class="progress-line react">
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="progress-line react">
-                            <span></span>
-                        </div>
-                    </div> -->
                     </div>
                 </div>
 
@@ -208,23 +210,19 @@
                 <div class="backboxprojects">
                     <div class="project-content">
                         <div class="row">
-                            <img src="adarsh.portfolio.png" alt="">
+                            <img src="/images/DiceGame1.png" alt="DiceGameWebsite">
                             <div class="layer">
-                                <h5>Personal Portfolio</h5>
-                                <p>It is my personal portfolio. I have provided information regading my skill set,
-                                    projects and many more in this portfolio. You can also contact me through this.</p>
-                                <a href=""><i class='bx bx-link-external' style="color: #000;"></i></a>
+                                <h5>Dice Game</h5>
+                                <p>It is a dice game website, made using ReactJs and styled components. Here you can play the game with some of the rules I made. You'll get points if you win and points will be deducted on losing.</p>
+                                <a href="https://github.com/adarshgupta14/DiceGame" target="_blank"><i class='bx bx-link-external' style="color: #000;"></i></a>
                             </div>
                         </div>
                         <div class="row">
-                            <img src="tech.tutor.png" alt="">
+                            <img src="/images/ContactUs-Page.png" alt="ContactUsPage">
                             <div class="layer">
-                                <h5>Tech Tutor</h5>
-                                <p>It is a course selling website. In this, I have provided some of the best courses for
-                                    tech as well as non-tech peoples regarding coding languages where they can learn it
-                                    from beginning.</p>
-                                <a href="https://adarshgupta14.github.io/TechTutor/" target="_blank"><i
-                                        class='bx bx-link-external' style="color: #000;"></i></a>
+                                <h5>ContactUs Page</h5>
+                                <p>It is a ContactUs Page, made using ReactJs and its styling is done through modules.</p>
+                                <a href="https://github.com/adarshgupta14/ContactUsPage" target="_blank"><i class='bx bx-link-external' style="color: #000;"></i></a>
                             </div>
                         </div>
                         <div class="row">
@@ -237,14 +235,16 @@
                             </div>
                         </div>
                         <div class="row">
-                            <img src="Calculator.png" alt="">
+                            <img src="/images/Nike-BrandPage.png" alt="Nike-BrandPage">
                             <div class="layer">
-                                <h5>Calculator</h5>
-                                <p>A calculator made using HTML, CSS and Js. It performs basic and advanced calculations. Try it once.</p>
-                                <a href="https://adarshgupta14.github.io/Calculator/" target="_blank"><i
-                                        class='bx bx-link-external' style="color: #000;"></i></a>
+                                <h5>Nike BrandPage</h5>
+                                <p>It is the copy of the Nike Brand's HomePage. It is made using ReactJs and this is my first React project.</p>
+                                <a href="https://github.com/adarshgupta14/Nike_BrandPage" target="_blank"><i class='bx bx-link-external' style="color: #000;"></i></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="all-projects">
+                        <a href="projects.html" target="_blank">All Projects</a>
                     </div>
                 </div>
             </div>
@@ -260,8 +260,8 @@
                         message or want to discuss about any project or any services then you can contact me through
                         email.</p>
                     <div class="contact-list">
-                        <li><i class='bx bx-send' style='color:#00eeff'></i> adarshfresher@gmail.com</li>
-                        <li><i class='bx bxs-phone' style='color:#00eeff'></i> ----------</li>
+                        <li><a href="mailto:adarshfresher@gmail.com"><i class='bx bx-send' style='color:var(--tag-color)'></i> adarshfresher@gmail.com</a></li>
+                        <li><i class='bx bxs-phone' style='color:var(--tag-color)'></i> ----------</li>
                     </div>
                     <div class="social-media">
                         <a href="https://github.com/adarshgupta14" target="_blank" style="--i:6"><svg
@@ -281,11 +281,11 @@
                 </div>
 
                 <div class="contact-form">
-                    <form action="">
-                        <input type="" placeholder="Enter Your Name" required>
-                        <input type="" placeholder="Enter Your Email" required>
-                        <input type="" placeholder="Enter Your Subject" required>
-                        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"
+                    <form action="page.html">
+                        <input type="name" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="subject" placeholder="Enter Your Subject" required>
+                        <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message"
                             required></textarea>
                         <input type="submit" value="Submit" class="send">
                     </form>
