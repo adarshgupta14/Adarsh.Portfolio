@@ -58,12 +58,13 @@ window.onscroll = function () {
   if (window.innerWidth > 500) {
     if(previousScrollPosition < currentScrollPosition){
       navbar.style.justifyContent = 'space-between';
-      navbar.style.margin = '0 30vh';
-      navbar.style.marginTop = '10px';
-      navbar.style.padding = '0 20px';
+      navbar.style.margin = '0 40vh';
+      navbar.style.marginTop = '15px';
+      navbar.style.padding = '0 30px';
+      navbar.style.height = '50px';
       navbar.style.borderRadius = '10px';
       navTags.forEach(navTags => {
-        navTags.style.margin = '0 10px';
+        navTags.style.margin = '0 8px';
       })
     }else{
       navbar.style.justifyContent = 'space-around';
