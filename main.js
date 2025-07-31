@@ -47,6 +47,7 @@ if (currentTheme) {
   document.documentElement.setAttribute("data-theme", "light");
 }
 
+//Sliding down animation of Navbar on scrolling
 const navbar = document.getElementById("navbar");
 const navContent = document.getElementsByClassName("nav-content");
 const navTags = document.querySelectorAll(".nav-tags");
