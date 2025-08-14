@@ -2,7 +2,7 @@
 var typedElement = document.getElementById('element');
 if (typedElement) {
     var typed = new Typed('#element', {
-        strings: ['Engineering Student', 'Programmer', 'Web Developer', 'Web Designer.'],
+        strings: ['Engineering Student', 'Programmer', 'Frontend Developer', 'Frontend Designer.'],
         typeSpeed: 50,
     });
 }
@@ -80,3 +80,19 @@ window.onscroll = function () {
     previousScrollPosition = currentScrollPosition;
   }
 };
+
+
+//Elements animation on scroll
+const elements = document.querySelectorAll('[data-animate]');
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      const animationName = entry.target.dataset.animate;
+      entry.target.style.animation = `${animationName} 2s ease forwards`;
+      // obs.unobserve(entry.target);
+    }else{
+      entry.target.style.animation = "none";
+    }
+  });
+}, { threshold: [0.1] });
+elements.forEach(el => observer.observe(el));
