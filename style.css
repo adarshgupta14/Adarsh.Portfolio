@@ -701,7 +701,7 @@ nav ul a:hover:after {
 .labels{
     position: relative;
     top: 13px;
-    left: -162px;
+    left: -10.5vw;
     padding: 1px 10px;
     font-size: 25px;
     font-weight: 600;
@@ -722,25 +722,6 @@ nav ul a:hover:after {
     padding: 8px;
     border-radius: 0.5rem;
 }
-
-/* DialogBox */
-.dialog{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.dialog-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5264b4;
-    font-size: 1.25rem;
-    width: 35vw;
-    height: 20vh;
-}
-
 
 
 
@@ -766,12 +747,12 @@ footer div {
 
 /* Scren Change */
 
-/* @media screen and (max-width: 500px) {
+@media (500px < width < 1000px) {
     .backboxcontact{
         display: flex;
         flex-wrap: wrap;
     }
-} */
+}
 @media screen and (max-width: 500px) {
 
     /* Navbar */ 
@@ -830,7 +811,7 @@ footer div {
         width: 100% !important;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        text-align: center;
         align-items: center;
     }
 
@@ -846,7 +827,7 @@ footer div {
     }
 
     .social-media a{
-        margin: 30px 7.5px;
+        margin: 10px 5px;
     }
 
     /* About */
@@ -857,10 +838,14 @@ footer div {
     }
     .About h2{
         margin: 10px 0 -20px 0;
-        font-size: 45px;
+        font-size: 40px;
     }
     .About-text{
         margin-right: 0px;
+    }
+    .About-text h4{
+        font-size: 15px;
+        margin: -10px 0  ;
     }
     .box{
         width: 125px;
@@ -870,13 +855,24 @@ footer div {
     }
     .About-text p{
         margin-bottom: 1rem;
+        font-size: 10px;
     }
 
     /* Services  */
+    .services_head{
+        font-size: 45px;
+    }
     .container{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .services{
+        padding: 10vw;
+    }
+    .services-list div h2{
+        font-size: 27px;
+    }
+
 
     /* Skills */
     .skillBoxes{
@@ -921,6 +917,9 @@ footer div {
     .all-projects{
         margin: 20px;
     }
+    .main-text h2{
+        font-size: 45px;
+    }
 
     body {
         min-height: fit-content;
@@ -938,12 +937,15 @@ footer div {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .contact-text h2{
+        font-size: 45px;
+    }
     .contact-form{
         margin-left: 40px;
         margin-right: 40px;
     }
     .labels{
-        left: -34vw;
+        left: -33vw;
         top: 12px;
     }
 }
