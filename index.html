@@ -1,342 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adarsh-Developer Portfolio</title>
 
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Finalized -->
     <header class="header">
-        <nav id="navbar">
-            <div class="logo">Adarsh's Portfolio</div>
-            <div class="nav-content">
-                <ul class="nav-menu">
-                    <li class="nav-tags"><a href="#Home" class="nav-link" style="--i:1" class="active">Home</a></li>
-                    <li class="nav-tags"><a href="#About" class="nav-link" style="--i:2">About</a></li>
-                    <li class="nav-tags"><a href="#Skills" class="nav-link" style="--i:3">Skills</a></li>
-                    <li class="nav-tags"><a href="#Projects" class="nav-link" style="--i:4">Projects</a></li>
-                    <li class="nav-tags"><a href="#Contact" class="nav-link" style="--i:5">Contact</a></li>
-                    <li class="theme-switch"> <!--  Toggle Switch -->
-                        <input type="checkbox" id="switch" />
-                        <label class="toggle-icons" for="switch">
-                            <img src="moon.svg" class="moon" />
-                            <img src="sun.svg" class="sun" />
-                        </label>
-                    </li>
-                </ul>
-                <!-- HamburgerMenu  -->
-                <div class="hamburger">
-                    <span class="h-bar"></span>
-                    <span class="h-bar"></span>
-                    <span class="h-bar"></span>
-                </div>
-            </div>
-        </nav>
+      <nav id="navbar">
+        <div class="logo">Adarsh's Portfolio</div>
+        <div class="nav-content">
+          <ul class="nav-menu">
+            <li class="nav-tags">
+              <a href="#Home" class="nav-link" style="--i: 1" class="active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-tags">
+              <a href="#About" class="nav-link" style="--i: 2">About</a>
+            </li>
+            <li class="nav-tags">
+              <a href="#Skills" class="nav-link" style="--i: 3">Skills</a>
+            </li>
+            <li class="nav-tags">
+              <a href="#Projects" class="nav-link" style="--i: 4">Projects</a>
+            </li>
+            <li class="nav-tags">
+              <a href="#Contact" class="nav-link" style="--i: 5">Contact</a>
+            </li>
+            <li class="theme-switch">
+              <!--  Toggle Switch -->
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img src="moon.svg" class="moon" />
+                <img src="sun.svg" class="sun" />
+              </label>
+            </li>
+          </ul>
+          <!-- HamburgerMenu  -->
+          <div class="hamburger">
+            <span class="h-bar"></span>
+            <span class="h-bar"></span>
+            <span class="h-bar"></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Finalized -->
     <main>
-        <!-- Finalized -->
-        <section class="Home-content" id="Home">
-            <div class="backboxhome">
-                <div class="home-left">
-                    <div class="slidebottom">Hello, I'm </div>
-                    <span class="name">Adarsh</span>
-                    <div class="slidebottom">and a passionate</div>
-                    <span class="slidebottom" id="element"></span>
-                    <div class="social-media">
-                        <a href="https://github.com/adarshgupta14" target="_blank" style="--i:6"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
-                                    clip-rule="evenodd"></path>
-                            </svg></i></box-icon></a>
-                        <a href="https://www.linkedin.com/in/adarshgupta04" target="_blank" style="--i:7"><i
-                                class='bx bxl-linkedin'></i></a>
-                        <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:8"><i
-                                class='bx bxl-instagram' target="_blank"></i></a>
-                        <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
-
-                    </div>
-                    <a href="https://drive.google.com/file/d/1IS9-q-rd2iCRED1p4shoJVmxtyLlteoL/view?usp=drivesdk"
-                        target="_blank" class="button-box">Resume</a>
-                </div>
-                <div class="home-right">
-                    <img src="images/img.jpg" alt="">
-                </div>
+      <!-- Finalized -->
+      <section class="Home-content" id="Home">
+        <div class="backboxhome">
+          <div class="home-left">
+            <div class="slidebottom">Hello, I'm</div>
+            <span class="name">Adarsh</span>
+            <div class="slidebottom">and a passionate</div>
+            <span class="slidebottom" id="element"></span>
+            <div class="social-media">
+              <a
+                href="https://github.com/adarshgupta14"
+                target="_blank"
+                style="--i: 6"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/adarshgupta04"
+                target="_blank"
+                style="--i: 7"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://leetcode.com/adarshgupta14/" style="--i: 9"
+                ><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/adarshgupta_14/"
+                target="_blank"
+                style="--i: 8"
+                ><i class="bx bxl-instagram" target="_blank"></i
+              ></a>
             </div>
-        </section>
+            <a
+              href="https://drive.google.com/file/d/1bafch2VVO84IFEA4IctiV3F_5eP0FMr4/view?usp=drivesdk"
+              target="_blank"
+              class="button-box"
+              >Resume</a
+            >
+          </div>
+          <div class="home-right">
+            <img src="images/img.jpg" alt="" />
+          </div>
+        </div>
+      </section>
 
-        <!-- Finalized -->
-        <section class="About" id="About">
-            <div class="backboxabout">
-                <div class="box" data-animate="slideRight">
-                    <img src="images/img.jpg" class="About-img" alt="">
-                </div>
-                <div class="About-text" data-animate="slideleft">
-                    <h2>About<span>Me</span></h2>
-                    <h4>Frontend Designer</h4>
-                    <p>Hey I'm Adarsh, currently in final year of B.Tech in Computer Science Engineering. I am a
-                        keen in Frontend Development, DSA and have a good commmand over Java, C, Javascript and have
-                        hands-on experience on frameworks like React, Tailwind and Bootstrap.
-                        Seeking opportunities to leverage skills and knowledge to contribute effectively to innovate
-                        projects and solutions in the field of computer science.
-                    </p>
-                </div>
+      <!-- Finalized -->
+      <section class="About" id="About">
+        <div class="backboxabout">
+          <div class="box" data-animate="slideRight">
+            <img src="images/img.jpg" class="About-img" alt="" />
+          </div>
+          <div class="About-text" data-animate="slideleft">
+            <h2>About<span>Me</span></h2>
+            <h4>Frontend Designer</h4>
+            <p>
+              Hey I'm Adarsh, currently in final year of B.Tech in Computer
+              Science Engineering. I am a keen in Frontend Development, DSA and
+              have a good commmand over Java, C, Javascript and have hands-on
+              experience on frameworks like React, Tailwind and Bootstrap.
+              Seeking opportunities to leverage skills and knowledge to
+              contribute effectively to innovate projects and solutions in the
+              field of computer science.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finalized -->
+      <section class="services" id="services">
+        <h1 class="sub-title services_head">My<span>Services</span></h1>
+        <div class="services-list">
+          <div data-animate="slideRight">
+            <i class="bx bxl-react" style="color: rgb(73, 73, 245)"></i>
+            <h2>Web Development</h2>
+            <p>
+              Crafting modern, responsive, and high-performance websites with
+              ReactJS, TailwindCSS, Bootstrap, Firebase, HTML5, CSS3, and
+              JavaScript — turning ideas into seamless digital experiences.
+            </p>
+          </div>
+          <div data-animate="slideRight">
+            <i class="bx bx-rocket" style="color: rgba(255, 51, 0, 0.884)"></i>
+            <h2>Deployment</h2>
+            <p>
+              Deploying websites effortlessly using GitHub Pages, Netlify,
+              Hostinger, and more — ensuring speed, reliability, and global
+              accessibility
+            </p>
+          </div>
+          <div data-animate="slideRight">
+            <i class="bx bx-wrench" style="color: rgba(121, 54, 6, 0.842)"></i>
+            <h2>Maintenance & Updates</h2>
+            <p>
+              Keeping your site updated, secure, and running flawlessly with
+              regular fixes, improvements, and optimizations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finalized -->
+      <section id="Skills">
+        <h1 class="sub-title skill_head">My<span>Skills</span></h1>
+        <div class="skillBoxes">
+          <div data-animate="slideleft">
+            <h2>Programming Languages</h2>
+            <div class="logosBox">
+              <div class="logoBox">
+                <i class="bx bxl-java" style="color: orange"></i>Java
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-javascript" style="color: #b0bc1e"></i
+                >Javascript
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-html5" style="color: #c95d2e"></i>HTML5
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-css3" style="color: #147bbc"></i>CSS3
+              </div>
             </div>
-        </section>
-
-        <!-- Finalized -->
-        <section class="services" id="services">
-            <h1 class="sub-title services_head">My<span>Services</span></h1>
-            <div class="services-list">
-                <div data-animate="slideRight">
-                    <i class='bx bxl-react' style='color:rgb(73, 73, 245)'></i>
-                    <h2>Web Development</h2>
-                    <p>Crafting modern, responsive, and high-performance websites with ReactJS, TailwindCSS, Bootstrap,
-                        Firebase, HTML5, CSS3, and JavaScript — turning ideas into seamless digital experiences.</p>
-                </div>
-                <div data-animate="slideRight">
-                    <i class='bx bx-rocket' style='color:rgba(255, 51, 0, 0.884)'></i>
-                    <h2>Deployment</h2>
-                    <p>Deploying websites effortlessly using GitHub Pages, Netlify, Hostinger, and more — ensuring
-                        speed, reliability, and global accessibility</p>
-                </div>
-                <div data-animate="slideRight">
-                    <i class='bx bx-wrench' style='color:rgba(121, 54, 6, 0.842)'></i>
-                    <h2>Maintenance & Updates</h2>
-                    <p>Keeping your site updated, secure, and running flawlessly with regular fixes, improvements, and
-                        optimizations.</p>
-                </div>
+          </div>
+          <div data-animate="slideleft">
+            <h2>Frameworks/Libraries</h2>
+            <div class="logosBox">
+              <div class="logoBox">
+                <i class="bx bxl-react" style="color: #69bcbc"></i>React
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-tailwind-css" style="color: #0ef"></i>Tailwind
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-firebase" style="color: orange"></i>Firebase
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-bootstrap" style="color: purple"></i>Bootstrap
+              </div>
             </div>
-        </section>
-
-        <!-- Finalized -->
-        <section id="Skills">
-            <h1 class="sub-title skill_head">My<span>Skills</span></h1>
-            <div class="skillBoxes">
-                <div data-animate="slideleft">
-                    <h2>Programming Languages</h2>
-                    <div class="logosBox">
-                        <div class="logoBox"><i class='bx bxl-java' style='color:orange'></i>Java</div>
-                        <div class="logoBox"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>Javascript</div>
-                        <div class="logoBox"><i class='bx bxl-html5' style='color: #c95d2e'></i>HTML5</div>
-                        <div class="logoBox"><i class='bx bxl-css3' style='color:#147bbc'></i>CSS3</div>
-                    </div>
-                </div>
-                <div data-animate="slideleft">
-                    <h2>Frameworks/Libraries</h2>
-                    <div class="logosBox">
-                        <div class="logoBox"><i class='bx bxl-react' style='color:#69bcbc'></i>React</div>
-                        <div class="logoBox"><i class='bx bxl-tailwind-css' style='color:#0ef'></i>Tailwind</div>
-                        <div class="logoBox"><i class='bx bxl-firebase' style='color:orange'></i>Firebase</div>
-                        <div class="logoBox"><i class='bx bxl-bootstrap' style='color:purple'></i>Bootstrap</div>
-                    </div>
-                </div>
-                <div data-animate="slideleft">
-                    <h2>Tools</h2>
-                    <div class="logosBox">
-                        <div class="logoBox"><i class='bx bxl-git' style='color:rgb(255, 94, 0)'></i>Git</div>
-                        <div class="logoBox"><i class='bx bxl-github' style='color:rgb(0, 0, 0)'></i>GitHub</div>
-                        <div class="logoBox"><i class='bx bxl-visual-studio' style='color:rgb(94, 94, 199)'></i>Visual
-                            Studio Code</div>
-                    </div>
-                </div>
+          </div>
+          <div data-animate="slideleft">
+            <h2>Tools</h2>
+            <div class="logosBox">
+              <div class="logoBox">
+                <i class="bx bxl-git" style="color: rgb(255, 94, 0)"></i>Git
+              </div>
+              <div class="logoBox">
+                <i class="bx bxl-github" style="color: rgb(0, 0, 0)"></i>GitHub
+              </div>
+              <div class="logoBox">
+                <i
+                  class="bx bxl-visual-studio"
+                  style="color: rgb(94, 94, 199)"
+                ></i
+                >Visual Studio Code
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Finalized -->
-        <section class="Projects" id="Projects">
-            <h2>Latest<span>Projects</span></h2>
-            <div class="project-carousel">
-                <div class="card" data-animate="slidetop">
-                    <img src="images/CryptoApp.png" alt="">
-                    <div class="layer">
-                        <h5>Crypto App</h5>
-                        <p>It is a crypto app dashboard, with transaction and support pages with a cool UI design.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/CryptoApp" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/CryptoApp" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/FirebaseContactApp.png" alt="">
-                    <div class="layer">
-                        <h5>Firebase Contact App</h5>
-                        <p>A contacts storing app, where you can add, update and delete contacts in real-time. Made
-                            using ReactJs, TailwindCSS, and used Firebase to connect a real-time database.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/FirebaseContactApp" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/FirebaseContactApp" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/TheHungryFork.png" alt="">
-                    <div class="layer">
-                        <h5>The Hungry Fork</h5>
-                        <p>The Hungry Fork is a food website made using ReactJs and styled through styled
-                            components. It takes data from backend and provides to frontend to preview.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/TheHungryFork" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/TheHungryFork" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/DiceGame1.png" alt="">
-                    <div class="layer">
-                        <h5>Dice Game</h5>
-                        <p>It is a dice game website, made using ReactJs and styled components. Here you can play
-                            the game with some of the rules I made. You'll get points if you win and points will be
-                            deducted on losing.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/DiceGame" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/DiceGame" target="_blank"><i class='bx bxl-github'
-                                    style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/ContactUs-Page.png" alt="">
-                    <div class="layer">
-                        <h5>ContactUs Page</h5>
-                        <p>It is a ContactUs Page, made using ReactJs and its styling is done through modules.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/ContactUsPage" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/ContactUsPage" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/weatherApp.png" alt="">
-                    <div class="layer">
-                        <h5>Weather App</h5>
-                        <p>Weather app, created using HTML, CSS and Js. It shows the weather with details like aqi,
-                            condition, temperature, aqi, latitude, longitude. This WeatherApp is created using
-                            frontend and with some API connections to get the weather from the server.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/WeatherApp" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/WeatherApp" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/Nike-BrandPage.png" alt="">
-                    <div class="layer">
-                        <h5>Nike BrandPage</h5>
-                        <p>It is the copy of the Nike Brand's HomePage. It is made using ReactJs and this is my
-                            first React project.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/Nike_BrandPage" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/Nike_BrandPage" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/Calculator.png" alt="">
-                    <div class="layer">
-                        <h5>Calculator</h5>
-                        <p>A calculator made using HTML, CSS and Js. It performs basic and advanced calculations.
-                            Try it once.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/Calculator" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/Calculator" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" data-animate="slidetop">
-                    <img src="images/tech.tutor.png" alt="">
-                    <div class="layer">
-                        <h5>Tech Tutor</h5>
-                        <p>It is a course selling website. In this, I have provided some of the best courses for
-                            tech as well as non-tech peoples regarding coding languages where they can learn it
-                            from beginning.</p>
-                        <div class="code-links">
-                            <a href="https://adarshgupta14.github.io/TechTutor" target="_blank"><i
-                                    class='bx bx-link-external demo' style="color: #000;">Live</i></a>
-                            <a href="https://github.com/adarshgupta14/TechTutor" target="_blank"><i
-                                    class='bx bxl-github' style="color: #000;">Code</i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Finalized -->
+      <section class="Projects" id="Projects">
+        <h2>Latest<span>Projects</span></h2>
+        <div class="project-carousel">
+          <div class="card" data-animate="slidetop">
+            <img src="images/CryptoApp.png" alt="" />
+            <div class="layer">
+              <h5>Crypto App</h5>
+              <p>
+                It is a crypto app dashboard, with transaction and support pages
+                with a cool UI design.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/CryptoApp"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/CryptoApp"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
             </div>
-        </section>
-
-        <!-- Finalized -->
-        <section id="Contact">
-            <div class="backboxcontact">
-                <div class="contact-text" data-animate="slideRight">
-                    <h2>Contact<span>Me</span></h2>
-                    <h4>Let's work together</h4>
-                    <p>Thanks you for visiting our website, if you have any query or suggestions you can send your
-                        message or want to discuss about any project or any services then you can contact me through
-                        email.</p>
-                    <div class="contact-list">
-                        <li><a href="mailto:adarshfresher@gmail.com"><i class='bx bx-send'
-                                    style='color:var(--tag-color)'></i> adarshfresher@gmail.com</a></li>
-                        <li><i class='bx bxs-phone' style='color:var(--tag-color)'></i> ----------</li>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://github.com/adarshgupta14" target="_blank" style="--i:6"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
-                                    clip-rule="evenodd"></path>
-                            </svg></i></box-icon></a>
-                        <a href="https://www.linkedin.com/in/adarshgupta04" target="_blank" style="--i:7"><i
-                                class='bx bxl-linkedin'></i></a>
-                        <a href="https://www.instagram.com/adarshgupta_14/" target="_blank" style="--i:8"><i
-                                class='bx bxl-instagram' target="_blank"></i></a>
-                        <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
-
-                    </div>
-                </div>
-
-                <div class="contact-form" data-animate="slideleft">
-                    <form action="https://formsubmit.co/adarshfresher@gmail.com" method="POST">
-                        <label for="name" class="labels label1"><i class='bx  bx-user-circle'></i></label>
-                        <input class="input1" type="text" name="name" placeholder="Name" required>
-                        <label for="email" class="labels label2"><i class='bx  bx-envelope'></i></label>
-                        <input class="input2" type="email" name="email" placeholder="Email" required>
-                        <label for="text" class="labels label3"><i class='bx  bx-message'></i></label>
-                        <textarea class="input3" name="message" id="" cols="40" rows="10" placeholder="Message" required></textarea>
-                        <button type="submit" class="send">Submit</button>
-                    </form>
-                </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/FirebaseContactApp.png" alt="" />
+            <div class="layer">
+              <h5>Firebase Contact App</h5>
+              <p>
+                A contacts storing app, where you can add, update and delete
+                contacts in real-time. Made using ReactJs, TailwindCSS, and used
+                Firebase to connect a real-time database.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/FirebaseContactApp"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/FirebaseContactApp"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/TheHungryFork.png" alt="" />
+            <div class="layer">
+              <h5>The Hungry Fork</h5>
+              <p>
+                The Hungry Fork is a food website made using ReactJs and styled
+                through styled components. It takes data from backend and
+                provides to frontend to preview.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/TheHungryFork"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/TheHungryFork"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/DiceGame1.png" alt="" />
+            <div class="layer">
+              <h5>Dice Game</h5>
+              <p>
+                It is a dice game website, made using ReactJs and styled
+                components. Here you can play the game with some of the rules I
+                made. You'll get points if you win and points will be deducted
+                on losing.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/DiceGame"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/DiceGame"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/ContactUs-Page.png" alt="" />
+            <div class="layer">
+              <h5>ContactUs Page</h5>
+              <p>
+                It is a ContactUs Page, made using ReactJs and its styling is
+                done through modules.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/ContactUsPage"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/ContactUsPage"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/weatherApp.png" alt="" />
+            <div class="layer">
+              <h5>Weather App</h5>
+              <p>
+                Weather app, created using HTML, CSS and Js. It shows the
+                weather with details like aqi, condition, temperature, aqi,
+                latitude, longitude. This WeatherApp is created using frontend
+                and with some API connections to get the weather from the
+                server.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/WeatherApp"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/WeatherApp"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/Nike-BrandPage.png" alt="" />
+            <div class="layer">
+              <h5>Nike BrandPage</h5>
+              <p>
+                It is the copy of the Nike Brand's HomePage. It is made using
+                ReactJs and this is my first React project.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/Nike_BrandPage"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/Nike_BrandPage"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/Calculator.png" alt="" />
+            <div class="layer">
+              <h5>Calculator</h5>
+              <p>
+                A calculator made using HTML, CSS and Js. It performs basic and
+                advanced calculations. Try it once.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/Calculator"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/Calculator"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" data-animate="slidetop">
+            <img src="images/tech.tutor.png" alt="" />
+            <div class="layer">
+              <h5>Tech Tutor</h5>
+              <p>
+                It is a course selling website. In this, I have provided some of
+                the best courses for tech as well as non-tech peoples regarding
+                coding languages where they can learn it from beginning.
+              </p>
+              <div class="code-links">
+                <a
+                  href="https://adarshgupta14.github.io/TechTutor"
+                  target="_blank"
+                  ><i class="bx bx-link-external demo" style="color: #000"
+                    >Live</i
+                  ></a
+                >
+                <a
+                  href="https://github.com/adarshgupta14/TechTutor"
+                  target="_blank"
+                  ><i class="bx bxl-github" style="color: #000">Code</i></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+      <!-- Finalized -->
+      <section id="Contact">
+        <div class="backboxcontact">
+          <div class="contact-text" data-animate="slideRight">
+            <h2>Contact<span>Me</span></h2>
+            <h4>Let's work together</h4>
+            <p>
+              Thanks you for visiting our website, if you have any query or
+              suggestions you can send your message or want to discuss about any
+              project or any services then you can contact me through email.
+            </p>
+            <div class="contact-list">
+              <li>
+                <a href="mailto:adarshfresher@gmail.com"
+                  ><i class="bx bx-send" style="color: var(--tag-color)"></i>
+                  adarshfresher@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-phone" style="color: var(--tag-color)"></i>
+                ----------
+              </li>
+            </div>
+            <div class="social-media">
+              <a
+                href="https://github.com/adarshgupta14"
+                target="_blank"
+                style="--i: 6"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/adarshgupta04"
+                target="_blank"
+                style="--i: 7"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://leetcode.com/adarshgupta14/" style="--i: 9"
+                ><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/adarshgupta_14/"
+                target="_blank"
+                style="--i: 8"
+                ><i class="bx bxl-instagram" target="_blank"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form" data-animate="slideleft">
+            <form
+              action="https://formsubmit.co/adarshfresher@gmail.com"
+              method="POST"
+            >
+              <label for="name" class="labels label1"
+                ><i class="bx bx-user-circle"></i
+              ></label>
+              <input
+                class="input1"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <label for="email" class="labels label2"
+                ><i class="bx bx-envelope"></i
+              ></label>
+              <input
+                class="input2"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <label for="text" class="labels label3"
+                ><i class="bx bx-message"></i
+              ></label>
+              <textarea
+                class="input3"
+                name="message"
+                id=""
+                cols="40"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="send">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
     </main>
 
     <!-- Setup and start animation! -->
@@ -345,14 +599,12 @@
 
     <!-- Finalized -->
     <footer>
-        <div class="footer-rights">
-            Developed with <span style="color: red; font-size: 20px;">&hearts;</span> By <span
-                style="color: purple; font-weight: 600;">Adarsh Gupta</span> | &#169; 2025
-        </div>
+      <div class="footer-rights">
+        Developed with
+        <span style="color: red; font-size: 20px">&hearts;</span> By
+        <span style="color: purple; font-weight: 600">Adarsh Gupta</span> |
+        &#169; 2025
+      </div>
     </footer>
-
-</body>
-
-
+  </body>
 </html>
-
