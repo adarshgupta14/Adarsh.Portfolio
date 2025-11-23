@@ -571,12 +571,6 @@ nav ul a:hover:after {
   width: 400px;
 }
 
-/* .tech-used {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-} */
-
 .layer {
   height: 0;
   background: rgb(1, 148, 158);
@@ -770,6 +764,7 @@ form textarea {
 }
 
 .contact-form form .send {
+  width: 100%;
   display: inline-block;
   padding: 14px 60px;
   background: var(--tag-color);
@@ -784,6 +779,11 @@ form textarea {
   animation: slidetop 0.6s ease forwards;
   animation-delay: 1.1s;
 }
+
+.contact-form form .send:hover {
+  box-shadow: 0 0 12px cyan;
+}
+
 
 .labels{
   font-size: 20px;
@@ -807,10 +807,6 @@ form textarea {
   position-area: top left;
   translate: 160%;
   transform: translateY(140%);
-}
-
-.contact-form form .send:hover {
-  box-shadow: 0 0 2px 3px cyan;
 }
 
 .top {
