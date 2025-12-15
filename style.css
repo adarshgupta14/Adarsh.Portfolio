@@ -366,58 +366,7 @@ nav ul a:hover:after {
   margin-right: 15px;
 }
 
-/* Services */
 
-.service-list {
-  color: aliceblue;
-  font-size: 28px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
-}
-
-.services_head {
-  text-align: center;
-  font-size: 50px;
-  padding-bottom: 40px;
-}
-
-.sub-title span {
-  color: var(--tag-color);
-}
-
-.services {
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 110px;
-}
-
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-}
-
-.services-list div {
-  background-color: transparent;
-  padding: 40px;
-  font-size: 13px;
-  border-right: 10px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
-  opacity: 0;
-}
-
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-.services-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-top: 0px;
-  line-height: 30px;
-}
 
 /* Skills */
 
@@ -499,12 +448,13 @@ nav ul a:hover:after {
 }
 
 .project-carousel {
-  width: 90vw;
+  width: 92vw;
   overflow-x: auto;
   overflow-y: hidden;
-  margin: 3em auto;
+  margin: 0 auto;
+  padding: 3em 0;
   display: flex;
-  gap: 1em;
+  gap: 22px;
   scroll-behavior: smooth;
   anchor-name: --project-carousel;
   scroll-snap-type: x mandatory;
@@ -555,6 +505,14 @@ nav ul a:hover:after {
   align-items: center;
   text-align: justify;
   scroll-snap-align: start;
+  background: linear-gradient(rgba(1, 148, 158, 0), rgb(1, 148, 158)) padding-box,
+    linear-gradient(180deg, red, skyblue, blue) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px #00000040, 1px 1px 40px #00000085;
+}
+.card:hover{
+  transform: scale(1.01) ;
 }
 
 .card::scroll-marker {
@@ -570,36 +528,39 @@ nav ul a:hover:after {
 }
 
 .card>img {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   width: 400px;
 }
 
 .layer {
-  height: 0;
-  background: rgb(1, 148, 158);
-  position: absolute;
-  border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: justify;
   padding: 0 20px;
-  transition: height 0.5s;
 }
 
-.layer h5 {
+.layer > h5 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.techStacks {
+  margin-bottom: 10px;
+}
+.techStacks h5 {
   color: #000;
   font-size: 16px;
   font-weight: 600;
-  margin: 0px;
+  margin: 0px 0px 5px 0px;
 }
 
 .layer p {
-  margin-top: 5px;
+  margin-top: 0px;
   color: #000;
   font-size: 14px;
   line-height: 1;
@@ -609,7 +570,12 @@ nav ul a:hover:after {
   text-decoration: none;
 }
 
-.layer i {
+.layer .logosBox {
+  font-size: 13px;
+  gap: 5px;
+}
+
+.codeLinks i {
   padding: 8px;
   font-size: 16px;
   background: #fff;
@@ -619,22 +585,16 @@ nav ul a:hover:after {
   border-radius: 5px;
 }
 
-.layer i:hover {
+.codeLinks i:hover {
   box-shadow: 0 0 5px 2px black;
 }
 
-.card:hover .layer {
-  height: 99%;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.code-links {
+.codeLinks {
   display: flex;
   gap: 5px;
 }
 
-.layer i.demo {
+.codeLinks i.demo {
   background: transparent;
   border: 1px solid black;
 }

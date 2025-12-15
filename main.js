@@ -2,7 +2,9 @@
 var typedElement = document.getElementById('element');
 if (typedElement) {
     var typed = new Typed('#element', {
-        strings: ['Engineering Student', 'Programmer', 'Frontend Developer', 'Frontend Designer.'],
+        strings: ['MERN Developer', 'Software Developer', 'JavaScript Enthusiast', 'Problem Solver'],
+        loop: true,
+        backSpeed: 30,
         typeSpeed: 50,
     });
 }
@@ -74,7 +76,7 @@ window.onscroll = function () {
       navbar.style.padding = '0';
       navbar.style.borderRadius = '0';
       navTags.forEach(navTags => {
-       navTags.style.margin = '0 23px';
+       navTags.style.margin = '0 15px';
       })
     }
     previousScrollPosition = currentScrollPosition;
