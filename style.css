@@ -201,7 +201,7 @@ nav ul a:hover:after {
   margin: 100px 0;
 }
 
-.backboxhome>div {
+.backboxhome>.home-right {
   width: 30%;
 }
 
@@ -249,14 +249,19 @@ nav ul a:hover:after {
 }
 
 .name {
-  color: rgb(170, 107, 228);
+  font-family: cursive;
+  font-size: 3.5rem;
+  line-height: 0.9;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
 }
 
-#element {
-  color: rgb(170, 107, 228);
+#element, .name {
+  background: linear-gradient(90deg, #ff0080, #7928ca, #2d2afa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-media a {
