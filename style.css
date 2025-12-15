@@ -976,12 +976,6 @@ footer .footer-rights {
     width: 350px;
   }
 
-  .layer h5 {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-
   .layer p {
     margin: 0;
     font-size: 0.75rem;
@@ -1042,6 +1036,14 @@ footer .footer-rights {
   /* Projects */
   .card img {
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  /* Project */
+  .card img {
+    width: 350px;
   }
 }
 
